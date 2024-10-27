@@ -69,7 +69,7 @@ def to_snake_case(string):
             result+= "_" + i
         else:
             result += i
-    return "".join(result[1:].split(" "))
+    return result[1].lower() + "".join(result[2:].split(" "))
 
 print(to_snake_case("TestController"))
 print(to_snake_case("MoviesAndBooks"))
